@@ -13,15 +13,15 @@
     "routes": [
       {
         "src": "/province/(.*)",
-        "dest": "/dist/main.js"
+        "dest": "/public/data/province/$1.json"
       },
       {
         "src": "/provinces",
-        "dest": "/dist/main.js"
+        "dest": "/public/data/provinces.json"
       },
       {
-        "src": "/public/(.*)",
-        "dest": "/public/$1"
+        "src": "/(.*)",
+        "dest": "/dist/main.js"
       }
     ]
   }
